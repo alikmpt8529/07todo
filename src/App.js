@@ -18,6 +18,13 @@ function App() {
     ]);
     setTask('');
   };
+  const handleCheck = (index) => {
+    const newTasks = tasks.map((t, i) =>
+      i === index ? { ...t, done: !t.done } : t
+    );
+    setTasks(newTasks);
+  };
+
 
  
   // 完了タスク一括削除
