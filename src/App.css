@@ -1,3 +1,12 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todo-app {
+  max-width: 100%;
+  width: 100%;
+  background: #fff;
+  padding: 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.task-list {
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  list-style: none;
+  background: none; /* デフォルトは色なし */
+}
+
+.task-list.has-task {
+  background: #f5f5f5; /* タスクがあるときだけ薄い灰色 */
+}
+
+.task-list li {
+  background: #c9c9c9;
+  margin: 6px 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.task-list li:hover {
+  background: #b0b0b0;
 }
