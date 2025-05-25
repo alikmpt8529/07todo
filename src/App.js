@@ -75,7 +75,9 @@ function App() {
   if (!loggedIn) {
     return (
       <div className="login-area">
-        <h2>ログイン</h2>
+        <h1>タスク管理アプリへようこそ</h1>
+        <p>使用するにはこの画面でユーザー名の入力が必要です</p>
+        <h2>ログイン画面</h2>
         <input
           type="text"
           value={username}
